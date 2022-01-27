@@ -1,0 +1,19 @@
+body{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    background:mediumaquamarine;
+
+}
+.form{
+    display:flex;
+    margin: 30px auto;
+    flex-direction:column;
+    text-align:left;
+    background:white;
+    padding:30px;
+}
+
+.form-header{
+    text-align: center;
+}

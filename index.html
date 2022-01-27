@@ -2,17 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet">
     <title>Form</title>
 </head>
 <body>
-<!--Your Code Goes Below this line-->
+<section class="form">
 
 
+    <!--Your Code Goes Below this line-->
+    <div class="form-header">
+
+        <h1 class="text-center" id="Title">A Survey</h1>
+        <p class="description text-center" id="description">Thank you for taking the time to complete this survey!</p>
+    </div>
+    <form action="">
+
+
+        <label for="name" id="name-label">Name</label>
+        <input class="form-control" id="name" name="name" placeholder="Enter your name" required type="text">
+        <div class="form-group"></div>
+        <label id="email-label" id="email" name="email">Email</label>
+        <input class="form-control" id="email" name="email" placeholder="Enter your email" required type="email">
+        <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
+
+        </label>
+        <input class="form-control" id="number" max="99" min="10" name="age" placeholder="Age" type="number">
+        </div>
+        <div class="form-group">
+            <p>What is your favorite food?</p>
+            <input checked class="input-radio" name="user-recommend" type="radio" value="definitely">
+            Pizza
+            <input class="input-radio" name="user-recommend" type="radio" value="maybe">
+            Taco
+            <input class="input-radio" name="user-recommend" type="radio" value="maybe">
+            Soup
+            <input class="input-radio" name="user-recommend" type="radio" value="maybe">
+            Bread
+        </div>
+        <p>Any comments or suggestions?</p>
+
+        <textarea class="input-textarea" id="comments" name="comment"
+                  placeholder="Enter your comment here..."></textarea>
+    </form>
+
+</section>
 <!--Your Code Goes Above this line-->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
